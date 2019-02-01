@@ -60,9 +60,77 @@
     border-radius: 2px;
 }
 
+/*work*/
+
+.work {
+    margin-bottom: 40px;
+}
+
+.work-list {
+
+}
+
+.work-list__item {
+    margin-bottom: 6px;
+
+}
+
+.work-card {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    border: 2px solid #e5e5e5;
+    padding: 20px;
+}
+
+.work-card::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.work-card__title {
+    float: left;
+    font-size: 15px;
+    line-height:1;
+    color: #231f1f;
+    width: 70%;
+}
+
+.work-card__price {
+    float: right;
+    font-size: 17px;
+}
+
+.work-card__price span {
+    font-size: 30px;
+}
+
+.work-card__footnote {
+    color: #d0510f;
+}
+
+
+.work-footnote {
+    color: #d0510f;
+    padding: 10px 0;
+    font-size: 14px;
+    font-style: italic;
+}
+
 @media (max-width: 1162px){
     .comparison-card {
         min-height: 0;
+    }
+}
+
+@media (max-width: 650px){
+    .work-card__title {
+        margin-bottom: 14px;
+    }
+    .work-card__title,
+    .work-card__price {
+        float: none;
+        width: 100%;
     }
 }
 @media (max-width: 560px){
